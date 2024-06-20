@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <img src="./logo.jfif" alt="Netflix Logo" class="logo">
+        <div class="d-flex">
+            <select class="form-control mr-3">
+                <option>English</option>
+                <option>हिन्दी</option>
+                <option>Sapnish</option>
+            </select>
+            <button class="btn btn-danger" type="button">SignIn</button>
+        </div>
+    </header>
+
+    <!-- Body Section -->
+    <main class="container" style="background-image:url ('netflix-background-gs7hjuwvv2g0e9fj.jpg;')">
+        <div class="text-center my-5">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <input type="email" class="form-control my-3" placeholder="Email address">
+            <button class="btn btn-lg btn-danger">Get Started</button>
+        </div>
+        <section class="my-5">
+            <h2>Popular on Netflix</h2>
+            <div class="row">
+                <!-- Add movie thumbnails here -->
+                <div class="col-md-3"><img src="./img2.jpg" class="img-fluid"></div>
+                <div class="col-md-3"><img src="./img3.jfif" class="img-fluid"></div>
+                <div class="col-md-3"><img src="./download.jfif" class="img-fluid"></div>
+                <div class="col-md-3"><img src="./logo.jfif" class="img-fluid"></div>
+            </div>
+        </section>
+        <section class="my-5">
+            <h2>FAQ's</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Netflix?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body" style="color: #580505;">
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Subscription Plan?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body" style="color: #580505;">
+                            4 Screen price is 15$, 2 Screen price is 20$.
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more FAQ items similarly -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Careers</a></li>
+                        <li><a href="#" class="text-white">Privacy</a></li>
+                        <li><a href="#" class="text-white">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Help Center</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Add more footer links similarly -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
